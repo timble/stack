@@ -84,7 +84,8 @@ $stack-size-logo: 5.625em !default;
         color: white;
     }
 
-    &:focus {
+    &:focus,
+    &:visited {
         color: white;
     }
 }
