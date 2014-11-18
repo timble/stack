@@ -1,15 +1,16 @@
-$stack-color: blue !default;
-$stack-size-logo: 5.625em !default;
+$stack-color--button-background: blue !default;
+$stack-color--button-text: #fff !default;
+$stack-size--logo: 5.625em !default;
 
 .stack-group__container {
     @extend %clearfix;
 }
 
 .stack-group {
-    margin-bottom: $stack-size-logo / 2;
+    margin-bottom: $stack-size--logo / 2;
 
     &:last-child {
-        margin-bottom: $stack-size-logo / 4;
+        margin-bottom: $stack-size--logo / 4;
     }
 }
 
@@ -20,11 +21,11 @@ $stack-size-logo: 5.625em !default;
     text-align: center;
 }
 .stack-item__container {
-    padding-top: $stack-size-logo;
+    padding-top: $stack-size--logo;
 }
 
 .stack-item__container--simple {
-    padding-top: $stack-size-logo / 2;
+    padding-top: $stack-size--logo / 2;
 }
 
 .stack-item {
@@ -34,12 +35,12 @@ $stack-size-logo: 5.625em !default;
 }
 
 .stack-item__logo {
-    height: $stack-size-logo;
-    width: $stack-size-logo;
+    height: $stack-size--logo;
+    width: $stack-size--logo;
     background-color: white;
     border-radius: 50%;
     border: 1px solid #DCDCDC;
-    margin: (-$stack-size-logo / 2) auto 0 auto;
+    margin: (-$stack-size--logo / 2) auto 0 auto;
     text-align: center;
 
     /* The ghost, nudged to maintain perfect centering */
@@ -60,7 +61,7 @@ $stack-size-logo: 5.625em !default;
 }
 
 .stack-item__title {
-    color: $stack-color;
+    color: $stack-color--button-background;
     margin: 1.25em;
 }
 
@@ -71,7 +72,7 @@ $stack-size-logo: 5.625em !default;
 
 .stack-item__button {
     height: auto;
-    background-color: $stack-color;
+    background-color: $stack-color--button-background;
     border-radius: 0.3125em;
     color: white;
     display: block;
@@ -80,13 +81,13 @@ $stack-size-logo: 5.625em !default;
     text-decoration: none;
 
     &:hover {
-        background-color: lighten($stack-color, 12%);
-        color: white;
+        background-color: lighten($stack-color--button-background, 12%);
+        color: $stack-color--button-text;
     }
 
     &:focus,
     &:visited {
-        color: white;
+        color: $stack-color--button-text;
     }
 }
 
