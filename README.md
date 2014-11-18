@@ -18,8 +18,10 @@ Use
 ---
 
 - Copy `stack.json` to `_data` folder in your Jekyll installation
-- Remove items that you are not using fomr stack.json file
+- Remove items that you are not using from stack.json file
 - Use something like grunt-contrib-copy to copy the following:
     - all logos to `images/stack` folder
     - `scss/_stack.scss` to your SCSS folder
     - `template/stack.html` to `_includes`
+- Include the include file: `{% include stack.html %}`
+- Optionally add a button class: `{% include stack.html class="alternative--button" %}`
