@@ -3,7 +3,16 @@ $stack-color--text: #fff !default;
 $stack-size--logo: 5.625em !default;
 
 .stack-group__container {
-  @extend %clearfix;
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  &:after {
+    clear: both;
+  }
 }
 
 .stack-group {
