@@ -8,7 +8,11 @@ Built to be used in Jekyll.
 Install
 -------
 
-`$ bower install timble/stack`
+Add the following dependency to your bower.json file:
+
+```"stack": "timble/stack"```
+
+Run `bower install`
 
 Use
 ---
