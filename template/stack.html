@@ -4,6 +4,10 @@
     <div class="stack-group__container">
         {% for item in group.data %}
         {% assign item_title = item.title | replace: ' ', '-' | downcase %}
+        {% assign button_class = 'stack-item__button' %}
+        {% if include.class %}
+        {% assign button_class = include.class %}
+        {% endif %}
         <div class="stack-item__container stack-item__container--{{ group.type }}" id="{{ item_title }}">
             <div class="stack-item">
                 {% if group.type != "simple" %}
@@ -13,7 +17,7 @@
                 {% endif %}
                 <h3 class="stack-item__title">{{ item.title }}</h3>
                 <p class="stack-item__description">{{ item.description }}</p>
-                <a class="stack-item__button" href="{{ item.url }}">Visit {{ item.title }}</a>
+                <a class="{{ button_class }}" href="{{ item.url }}">Visit {{ item.title }}</a>
             </div>
         </div>
         {% endfor %}
