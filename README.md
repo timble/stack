@@ -17,14 +17,14 @@ Run `bower install`
 Use
 ---
 
-- Remove items that you are not using from stack.json file
-- Use something like grunt-contrib-copy to automatically copy the following from bower_components:
+- Use [grunt-contrib-copy](https://github.com/gruntjs/grunt-contrib-copy) (or similar) to automatically copy the following files from bower_components:
     - all logos to `images/stack` folder
     - `scss/_stack.scss` to your SCSS folder and make sure to include it in your main SCSS file
     - `template/stack.html` to `_includes`
+    - `stack.json` to `_data/vendor`
+- Create a `stack.json` file in your `_data` folder and add the tools you want
 - Include the include file: `{% include stack.html %}` in your page
 - Optionally add a button class: `{% include stack.html class="alternative--button" %}`
-- Create a `stack.json` file in your `_data` folder and add the tools you want
 
 Examples
 ========
