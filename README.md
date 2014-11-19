@@ -88,7 +88,7 @@ The best way to add your own tools is to create a branch and submit a pull reque
 }
 ```
 
-Just make sure you add a 100x100 pixels PNG image to your `images/stack` folder (don't place within vendor folder).
+Just make sure you add both the 'description' and 'url' and add a 100x100 pixels PNG image to your `images/stack` folder (don't place within vendor folder).
 
 Grunt contrib copy example (place in your gruntfile)
 ----------------------------------------------------
