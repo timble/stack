@@ -5,6 +5,11 @@
         "url": "https://github.com/toddmotto/apollo"
     },
     {
+        "title": "AGIV",
+        "description": "Flemish Geographical Information Agency.",
+        "url": "https://www.agiv.be"
+    },
+    {
         "title": "Bower",
         "description": "A package manager for the web.",
         "url": "http://bower.io/"
