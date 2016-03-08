@@ -1,4 +1,10 @@
-{% for group in site.data.stack %}
+{% if include.file %}
+{% assign stack = site.data.stack.[include.file] %}
+{% else %}
+{% assign stack = site.data.stack %}
+{% endif %}
+
+{% for group in stack %}
 <div class="stack-group">
     <h2 class="stack-group__header">{{ group.title }}</h2>
     <div class="stack-group__container">
