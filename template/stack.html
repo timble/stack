@@ -40,7 +40,8 @@
                                 {% endif %}
                                 <h3 class="stack-item__title">{{ tool.title }}</h3>
                                 <p class="stack-item__description">{{ tool.description }}</p>
-                                <a class="{{ button_class }}" href="{{ tool.url }}">Visit {{ tool.title }}</a>
+                                {% assign button_text = tool.url | remove: 'https://' | remove: 'http://' | remove: 'www.' | split: '/' %}
+                                <a class="{{ button_class }}" href="{{ tool.url }}">{{ button_text | first }}</a>
                             </div>
                         </div>
                     {% endif %}
