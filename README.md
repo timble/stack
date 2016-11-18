@@ -1,9 +1,17 @@
-stack
+Stack
 =====
 
 Show a stack of tools that are used to build your project. 
 
 Built to be used in [Jekyll](http://jekyllrb.com/) with [Grunt](http://gruntjs.com/) and [Bower](http://bower.io/).
+
+Usage
+-----
+
+Used on:
+
+- [Timble](https://www.timble.net/stack/)
+- [Timble - Open Police](https://www.timble.net/platform/open-police/stack/)
 
 Install
 -------
